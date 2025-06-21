@@ -6,9 +6,16 @@
     const button1 = document.querySelector("#btn1");
     const button2 = document.querySelector("#btn2");
 
-    function hideImage() {
-      img1.style.display = "none"; 
-    }
-     function Displaymage() {
-      img1.style.display = "block"; 
-    }
+    btn1.addEventListener("click", ()=>{
+
+      img1.style.display ="none"
+      img2.style.display = "block"
+    })
+
+    btn2.addEventListener("click", ()=>{
+
+      img1.style.display = "block"
+      img2.style.display = "none"
+    })
+
+
